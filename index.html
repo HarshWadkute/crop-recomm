@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiGyan - Your Complete Farming Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-600 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-tractor text-2xl mr-2"></i>
+                    <span class="text-xl font-bold">KrishiGyan</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/home" class="hover:text-green-200">Home</a>
+                    <a href="/" class="hover:text-green-200">Crop Recommendation</a>
+                    <a href="/weather" class="hover:text-green-200">Weather</a>
+                    <a href="/news" class="hover:text-green-200">News</a>
+                    <a href="/chatbot" class="hover:text-green-200">Chatbot</a>
+                </div>
+               
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-green-50 py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                        Empowering Indian Farmers with Smart Solutions
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Access weather forecasts, crop recommendations, market prices, and government schemes - all in one place.
+                    </p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Tiles -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Quick Access</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Weather Widget -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-cloud-sun text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Weather Forecast</h3>
+                    <p class="text-gray-600 mb-4">Get accurate weather predictions for your farm location</p>
+                    <div id="weather-widget" class="text-sm">
+                        Loading weather data...
+                    </div>
+                </div>
+
+                <!-- Market Prices -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-chart-line text-3xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Market Prices</h3>
+                    <p class="text-gray-600 mb-4">Real-time crop prices from major markets</p>
+                    <div id="market-prices" class="text-sm">
+                        Loading market data...
+                    </div>
+                </div>
+
+                <!-- Crop Recommendation -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-seedling text-3xl text-yellow-500 mb-4"></i>
+                    <img src="C:\Users\harsh\OneDrive\Desktop\Mini Project\newgate\simple and professional logo for crop recommendation system.png" alt="Crop Recommendation" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Crop Recommendation</h3>
+                    <p class="text-gray-600 mb-4">Get personalized crop suggestions based on your farm conditions</p>
+                    <a href="http://127.0.0.1:5000/" class="hover:text-green-200">
+                        <button class="text-green-600 hover:text-green-700">Try Now →</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Latest Agricultural News</h2>
+            <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                Loading news...
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">KrishiGyan</h3>
+                    <p class="text-green-200">Empowering Indian farmers with technology</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-green-200 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-green-200 hover:text-white">Features</a></li>
+                        <li><a href="#" class="text-green-200 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-green-200 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-green-200 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-green-200 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-green-700 mt-8 pt-8 text-center text-green-200">
+                <p>&copy; 2024 KrishiGyan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
